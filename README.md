@@ -15,7 +15,7 @@
 | **Estruturais** | 7 | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
 | **Comportamentais** | 11 | Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor |
 
-### Lista distribuída de Padrão x Classe
+### Listagem Padrão / Classe
 | # | Categoria | Padrão | Classes principais no domínio |
 | :-: | :--- | :--- | :--- |
 | 1 | Criacional | Singleton | CaixaRegistradora |
@@ -44,4 +44,55 @@
 
 ### Diagramas
 
+#### Resumo técnico - Notação UML
+
+##### Atributos e Métodos
+| Símbolo | Nome | Descrição |
+| :---: | :--- | :--- |
+| **`+`** | Público / Public | O elemento é visível por qualquer outra classe. |
+| **`-`** | Privado / Private | O elemento só pode ser acessado de dentro da própria classe. |
+| **`#`** | Protegido / Protected | Visível apenas para a própria classe e suas subclasses (herança). |
+| **`~`** | Pacote / Package | Visível apenas por classes dentro do mesmo pacote (package-private). |
+
+##### Relacionamentos (Linhas e Setas)
+| Elemento Visual | Linha | Seta | Significado |
+| :---: | :--- | :--- | :--- |
+| **`——-—▷`** | Contínua | Triangular, Fechada e Vazia | Herança / Extensão |
+| **`-- - ▷`** | Tracejada | Triangular, Fechada e Vazia | Implementação |
+| **`——-—>`** | Contínua | Aberta (em "V") | Associação Direcionada |
+| **`-- - >`** | Tracejada | Aberta (em "V") | Dependência |
+| **`♢——-—`** | Contínua | Losango Vazio (na origem) | Agregação |
+| **`♦——-—`** | Contínua | Losango Preenchido (na origem) | Composição |
+
+##### Multiplicidade
+| Notação | Significado | Descrição |
+| :---: | :--- | :--- |
+| **`1`** | Exatamente uma instância | Obrigatório e exclusivo |
+| **`0..1`** | Zero ou uma instância | Opcional |
+| **`*`** ou **`0..*`** | Zero ou múltiplas instâncias | Lista aberta que pode ser vazia |
+| **`1..*`** | Uma ou múltiplas instâncias | Obrigatório ao menos uma |
+
+#### Diagrama geral
 ![Diagrama UML Hamburgueria](diagrama_hamburgueria.png)
+
+#### Diagramas por padrão
+,, , 
+Criacionais** | 5 | Singleton, Factory Method, Abstract Factory, Builder, Prototype |
+| **Estruturais** | 7 | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
+| **Comportamentais** | 11 | Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor |
+01. Singleton -  Criacional
+![Diagrama UML Singleton](diagrama_singleton.png)
+
+02. Factory Method -  Criacional
+![Diagrama UML Singleton](diagrama_singleton.png)
+
+3. Abstract Factory -  Criacional
+![Diagrama UML Singleton](diagrama_singleton.png)
+
+4. Builder -  Criacional
+![Diagrama UML Singleton](diagrama_singleton.png)
+
+5. Prototype -  Criacional
+![Diagrama UML Singleton](diagrama_singleton.png)
+
+...
