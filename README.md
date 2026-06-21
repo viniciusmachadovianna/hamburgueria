@@ -1,46 +1,40 @@
 # Hamburgueria
-> Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disciplina de "Arquitetura e Projeto de Software" na graduação em Engenharia de Software \
+Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disciplina de "Arquitetura e Projeto de Software" na graduação em Engenharia de Software
+
+**Comando:** 
+> Aplicar todos os 23 padrões de projeto em um **Sistema de atendimento fastfood para Hamburgueria** usando Java Maven + JUnit
 
 **Referências técnicas principais:** [Refactoring Guru](https://refactoring.guru/design-patterns/) e [Repositório do professor](https://github.com/marcoaparaujo/padroes-projeto)
-
-**Comando:** Aplicar todos os 23 padrões de projeto em um **Sistema de atendimento fastfood para Hamburgueria** usando Java Maven + JUnit
 
 ---
 
 ## Padrões e diagramas
 
-| Categoria | Quantidade | Padrões |
-| :--- | :---: | :--- |
-| **Criacionais** | 5 | Singleton, Factory Method, Abstract Factory, Builder, Prototype |
-| **Estruturais** | 7 | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
-| **Comportamentais** | 11 | Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor |
-
-### Listagem Padrão / Classe
-| # | Categoria | Padrão | Classes principais no domínio |
-| :-: | :--- | :--- | :--- |
-| 1 | Criacional | Singleton | CaixaRegistradora |
-| 2 | Criacional | Factory Method | FabricaLanche + subclasses |
-| 3 | Criacional | Abstract Factory | FabricaIngredientes |
-| 4 | Criacional | Builder | LancheBuilder + CardapioDirector |
-| 5 | Criacional | Prototype | CombinacaoPredefinida + RegistroCombos |
-| 6 | Estrutural | Adapter | AdaptadorGatewayExterno |
-| 7 | Estrutural | Bridge | ItemMenu × MetodoPreparo |
-| 8 | Estrutural | Composite | ItemCardapio |
-| 9 | Estrutural | Decorator | LancheDecorator |
-| 10 | Estrutural | Facade | PedidoFacade |
-| 11 | Estrutural | Flyweight | TipoIngrediente + FabricaIngredientesFlyweight |
-| 12 | Estrutural | Proxy | ProxyEstoque |
-| 13 | Comportamental | Chain of Responsibility | AprovadorDesconto |
-| 14 | Comportamental | Command | PedidoCommand + Garcom |
-| 15 | Comportamental | Interpreter | ExpressaoCupom |
-| 16 | Comportamental | Iterator | CardapioIterator |
-| 17 | Comportamental | Mediator | AtendimentoMediator / CentralAtendimento |
-| 18 | Comportamental | Memento | PedidoMemento + HistoricoPedido |
-| 19 | Comportamental | Observer | PedidoObservavel + observadores |
-| 20 | Comportamental | State | EstadoPedido |
-| 21 | Comportamental | Strategy | EstrategiaEntrega |
-| 22 | Comportamental | Template Method | PreparoLanche |
-| 23 | Comportamental | Visitor | RelatorioVisitor |
+| # | Padrão (Categoria) | Classes principais no domínio |
+| :-: | :--- | :--- |
+| 1 | Singleton (Criacional) | CaixaRegistradora |
+| 2 | Factory Method (Criacional) | FabricaLanche |
+| 3 | Abstract Factory (Criacional) | FabricaIngredientes |
+| 4 | Builder (Criacional) | LancheBuilder + CardapioDirector |
+| 5 | Prototype (Criacional) | CombinacaoPredefinida + RegistroCombos |
+| 6 | Adapter (Estrutural) | AdaptadorGatewayExterno |
+| 7 | Bridge (Estrutural) | ItemMenu × MetodoPreparo |
+| 8 | Composite (Estrutural) | ItemCardapio |
+| 9 | Decorator (Estrutural) | LancheDecorator |
+| 10 | Facade (Estrutural) | PedidoFacade |
+| 11 | Flyweight (Estrutural) | TipoIngrediente + FabricaIngredientesFlyweight |
+| 12 | Proxy (Estrutural) | ProxyEstoque |
+| 13 | Chain of Responsibility (Comportamental) | AprovadorDesconto |
+| 14 | Command (Comportamental) | PedidoCommand + Garcom |
+| 15 | Interpreter (Comportamental) | ExpressaoCupom |
+| 16 | Iterator (Comportamental) | CardapioIterator |
+| 17 | Mediator (Comportamental) | AtendimentoMediator / CentralAtendimento |
+| 18 | Memento (Comportamental) | PedidoMemento + HistoricoPedido |
+| 19 | Observer (Comportamental) | PedidoObservavel + observadores |
+| 20 | State (Comportamental) | EstadoPedido |
+| 21 | Strategy (Comportamental) | EstrategiaEntrega |
+| 22 | Template Method (Comportamental) | PreparoLanche |
+| 23 | Visitor (Comportamental) | RelatorioVisitor |
 
 ### Diagramas
 
@@ -76,23 +70,125 @@
 ![Diagrama UML Hamburgueria](diagrama_hamburgueria.png)
 
 #### Diagramas por padrão
-,, , 
-Criacionais** | 5 | Singleton, Factory Method, Abstract Factory, Builder, Prototype |
-| **Estruturais** | 7 | Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy |
-| **Comportamentais** | 11 | Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor |
-01. Singleton -  Criacional
+##### Criacionais (Total: 5)
+Mecanismos de criação de objetos, tentando criar objetos de forma adequada à situação.
+
+01. Singleton
+> Função: garantir que uma classe tenha **apenas uma instância** e fornecer um ponto de acesso global a ela.
+
 ![Diagrama UML Singleton](diagrama_singleton.png)
 
-02. Factory Method -  Criacional
-![Diagrama UML Singleton](diagrama_singleton.png)
+02. Factory Method
+> Função: definir uma **interface para criar** um objeto, mas deixar subclasses definirem qual classe instanciar.
 
-3. Abstract Factory -  Criacional
-![Diagrama UML Singleton](diagrama_singleton.png)
+![Diagrama UML Factory Method](diagrama_factoryMethod.png)
 
-4. Builder -  Criacional
-![Diagrama UML Singleton](diagrama_singleton.png)
+03. Abstract Factory
+> Função: fornecer uma interface para **relacionar** objetos sem especificar suas classes concretas.
 
-5. Prototype -  Criacional
-![Diagrama UML Singleton](diagrama_singleton.png)
+![Diagrama UML Abstract Factory](diagrama_abstractFactory.png)
 
-...
+04. Builder
+> Função: separar a construção de um **objeto complexo**, permitindo criar diferentes representações usando o mesmo processo de construção.
+
+![Diagrama UML Builder](diagrama_builder.png)
+
+05. Prototype
+> Função: especificar os tipos de **objetos a serem copiados** através de um protótipo.
+
+![Diagrama UML Prototype](diagrama_prototype.png)
+
+##### Estruturais (Total: 7)
+Composição de classes e objetos que formam estruturas maiores, flexíveis e mais eficientes.
+
+06. Adapter
+> Função: **converter** / "adaptar" interfaces, permitindo que classes incompatíveis trabalhem juntas.
+
+![Diagrama UML Adapter](diagrama_adapter.png)
+
+07. Bridge
+> Função: **desacopla** a abstração da implementação para permitir variações independentes.
+
+![Diagrama UML Bridge](diagrama_bridge.png)
+
+08. Composite
+> Função: compor objetos em **estruturas de árvore** para representar hierarquias parte-todo, permitindo tratar objetos individuais e composições de forma parecida.
+
+![Diagrama UML Composite](diagrama_composite.png)
+
+09. Decorator
+> Função: dá responsabilidades **adicionais** a um objeto dinamicamente, é uma alternativa à herança.
+
+![Diagrama UML Decorator](diagrama_decorator.png)
+
+10. Facade
+> Função: uma **interface simplificada** de um conjunto de interfaces para facilitar o uso.
+
+![Diagrama UML Facade](diagrama_facade.png)
+
+11. Flyweight
+> Função: suportar **grandes quantidades de objetos** usando compartilhamento de elementos em comum.
+
+![Diagrama UML Flyweight](diagrama_flyweight.png)
+
+12. Proxy
+> Função: **controlar o acesso** a um objeto através de um marcador / substituto.
+
+![Diagrama UML Proxy](diagrama_proxy.png)
+
+##### Comportamentais (Total: 11)
+
+13. Chain of Responsibility
+> Função: **encadeia** uma solicitação até "alguém" tratar
+
+![Diagrama UML Chain of Responsibility](diagrama_chainOfResponsibility.png)
+
+14. Command
+> Função: encapsular uma solicitação, permitindo **parametrizar / enfileirar /  registrar operações**, suportando inclusive que elas possam ser desfeitas.
+
+![Diagrama UML Command](diagrama_command.png)
+
+15. Interpreter
+> Função: usar uma "representação gramática" para **interpretar sentenças de linguagem**.
+
+![Diagrama UML Interpreter](diagrama_interpreter.png)
+
+16. Iterator
+> Função: acessar elementos de um objeto agregado sem expor a representação interna.
+
+![Diagrama UML Iterator](diagrama_iterator.png)
+
+17. Mediator
+> Função: **determina como um conjunto de objetos interage**, evitando que objetos se refiram uns aos outros explicitamente.
+
+![Diagrama UML Mediator](diagrama_mediator.png)
+
+18. Memento
+> Função: capturar o estado de um objeto para que ele possa ser restaurado quando necessário, sem violar encapsulamento.
+
+![Diagrama UML Memento](diagrama_memento.png)
+
+19. Observer
+> Função: quando um objeto muda de estado, notifica os dependentes para que atualizem automaticamente.
+
+![Diagrama UML Observer](diagrama_observer.png)
+
+20. State
+> Função: **altera o comportamento de um objeto** quando seu estado muda, "parecendo" que o objeto mudou de classe.
+
+![Diagrama UML State](diagrama_state.png)
+
+21. Strategy
+> Função: define um conjunto de algoritmos (estratégias) que podem ser alternados, permitindo que o algoritmo varie independentemente dos que o cliente utilizar.
+
+![Diagrama UML Strategy](diagrama_strategy.png)
+
+22. Template Method
+> Função: é o esqueleto de um algoritmo, deixando alguns pontos para as subclasses definirem, sem alterar a estrutura geral.
+
+![Diagrama UML Template Method](diagrama_templateMethod.png)
+
+23. Visitor
+> Função: uma operação executada em uma lista de objetos, permitindo definir novas operações sem mudar as classes desses elementos.
+
+![Diagrama UML Visitor](diagrama_visitor.png)
