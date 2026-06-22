@@ -77,6 +77,7 @@ Mecanismos de criação de objetos, tentando criar objetos de forma adequada à 
 > Função: garantir que uma classe tenha **apenas uma instância** e fornecer um ponto de acesso global a ela.
 
 ![Diagrama UML Singleton](diagrams/singleton.png)
+![Ref. visual](https://refactoring.guru/design-patterns/singleton)
 
 02. Factory Method
 > Função: definir uma **interface para criar** um objeto, mas deixar subclasses definirem qual classe instanciar.
