@@ -3,10 +3,6 @@ package com.hamburgueria.structural.proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * RealSubject: implementacao real do servico de estoque, que simula uma
- * operacao custosa (ex.: acesso a um banco de dados ou servico remoto).
- */
 public class EstoqueReal implements ServicoEstoque {
 
     private final Map<String, Integer> quantidades = new HashMap<>();

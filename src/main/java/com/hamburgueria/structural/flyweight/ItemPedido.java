@@ -1,9 +1,5 @@
 package com.hamburgueria.structural.flyweight;
 
-/**
- * Contexto que combina o estado extrinseco (quantidade, especifico de cada
- * pedido) com a referencia ao flyweight compartilhado (TipoIngrediente).
- */
 public class ItemPedido {
 
     private final TipoIngrediente tipoIngrediente;

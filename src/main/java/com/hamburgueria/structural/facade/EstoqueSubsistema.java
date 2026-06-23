@@ -1,6 +1,5 @@
 package com.hamburgueria.structural.facade;
 
-/** Subsistema complexo: controle de estoque de ingredientes. */
 public class EstoqueSubsistema {
 
     public boolean verificarDisponibilidade(String ingrediente, int quantidade) {

@@ -1,11 +1,5 @@
 package com.hamburgueria.structural.flyweight;
 
-/**
- * Flyweight: representa o estado INTRINSECO (compartilhado, imutavel) de um
- * tipo de ingrediente: nome, unidade de medida e informacoes nutricionais
- * fixas. Esse objeto e caro de manter em memoria se duplicado para cada
- * lanche, entao e compartilhado entre todos os pedidos que o utilizam.
- */
 public class TipoIngrediente {
 
     private final String nome;

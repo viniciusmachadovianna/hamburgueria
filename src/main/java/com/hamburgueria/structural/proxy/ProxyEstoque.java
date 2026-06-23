@@ -3,18 +3,6 @@ package com.hamburgueria.structural.proxy;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Padrao PROXY.
- *
- * Atua como um substituto/intermediario para EstoqueReal, controlando o
- * acesso a ele. Aqui o proxy cumpre duas responsabilidades classicas do
- * padrao:
- *  1) Controle de acesso: apenas usuarios com perfil "GERENTE" podem
- *     atualizar quantidades de estoque (operacao sensivel).
- *  2) Cache (Proxy Virtual/Cache Proxy): consultas repetidas ao mesmo
- *     ingrediente sao respondidas a partir de um cache local, evitando
- *     custo extra de acessar o EstoqueReal novamente.
- */
 public class ProxyEstoque implements ServicoEstoque {
 
     private final EstoqueReal estoqueReal;

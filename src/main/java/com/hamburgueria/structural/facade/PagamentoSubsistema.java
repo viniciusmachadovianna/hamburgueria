@@ -1,6 +1,5 @@
 package com.hamburgueria.structural.facade;
 
-/** Subsistema complexo: cobranca do pedido. */
 public class PagamentoSubsistema {
 
     public boolean cobrar(double valor) {
