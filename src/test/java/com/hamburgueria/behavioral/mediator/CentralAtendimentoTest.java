@@ -2,10 +2,7 @@ package com.hamburgueria.behavioral.mediator;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-<parameter name="file_text">package com.hamburgueria.behavioral.mediator;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -48,7 +45,6 @@ class CentralAtendimentoTest {
     @Test
     @DisplayName("Estacoes nao devem referenciar umas as outras diretamente")
     void estacoesNaoDevemSeConhecerDiretamente() {
-        // Cozinha, Caixa e Entregador so conhecem AtendimentoMediator
         assertInstanceOf(AtendimentoMediator.class, central);
         assertDoesNotThrow(() -> caixa.registrarPedido());
     }

@@ -14,12 +14,12 @@ class MementoTest {
         HistoricoPedido historico = new HistoricoPedido();
 
         pedido.adicionarItem("X-Burguer", 15.90);
-        historico.salvar(pedido.salvarEstado());     // checkpoint
+        historico.salvar(pedido.salvarEstado());
 
-        pedido.adicionarItem("Batata Frita", 8.00); // alteracao apos checkpoint
+        pedido.adicionarItem("Batata Frita", 8.00);
         assertEquals(2, pedido.getItens().size());
 
-        pedido.restaurarEstado(historico.desfazer()); // volta ao checkpoint
+        pedido.restaurarEstado(historico.desfazer());
 
         assertEquals(1, pedido.getItens().size());
         assertEquals(15.90, pedido.getTotal(), 0.001);
@@ -31,16 +31,16 @@ class MementoTest {
         PedidoEmEdicao pedido = new PedidoEmEdicao();
         HistoricoPedido historico = new HistoricoPedido();
 
-        historico.salvar(pedido.salvarEstado());        // checkpoint 1: vazio
+        historico.salvar(pedido.salvarEstado());
         pedido.adicionarItem("X-Burguer", 15.90);
-        historico.salvar(pedido.salvarEstado());        // checkpoint 2: 1 item
+        historico.salvar(pedido.salvarEstado());
 
         pedido.adicionarItem("Refrigerante", 6.00);
-        pedido.restaurarEstado(historico.desfazer());   // volta ao checkpoint 2
+        pedido.restaurarEstado(historico.desfazer());
 
         assertEquals(1, pedido.getItens().size());
 
-        pedido.restaurarEstado(historico.desfazer());   // volta ao checkpoint 1
+        pedido.restaurarEstado(historico.desfazer());
 
         assertTrue(pedido.getItens().isEmpty());
     }
@@ -48,8 +48,6 @@ class MementoTest {
     @Test
     @DisplayName("Caretaker nao deve expor o conteudo interno do memento")
     void caretakerNaoDeveExporConteudoDoMemento() {
-        // HistoricoPedido so conhece PedidoMemento como caixa-preta
-        // — verificamos que o tipo retornado e opaco para o caretaker
         HistoricoPedido historico = new HistoricoPedido();
         PedidoEmEdicao pedido = new PedidoEmEdicao();
         pedido.adicionarItem("Item", 10.0);

@@ -42,7 +42,7 @@ class PedidoComEstadoTest {
     @DisplayName("Avancar apos ENTREGUE deve lancar excecao")
     void avancarAposEntregueDeveLancarExcecao() {
         PedidoComEstado pedido = new PedidoComEstado();
-        pedido.avancar(); pedido.avancar(); pedido.avancar(); // -> ENTREGUE
+        pedido.avancar(); pedido.avancar(); pedido.avancar();
 
         assertThrows(IllegalStateException.class, pedido::avancar);
     }
@@ -51,7 +51,7 @@ class PedidoComEstadoTest {
     @DisplayName("Cancelar pedido PRONTO deve lancar excecao")
     void cancelarPedidoProntoDeveLancarExcecao() {
         PedidoComEstado pedido = new PedidoComEstado();
-        pedido.avancar(); pedido.avancar(); // -> PRONTO
+        pedido.avancar(); pedido.avancar();
 
         assertThrows(IllegalStateException.class, pedido::cancelar);
     }

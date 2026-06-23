@@ -21,7 +21,6 @@ class CalculadoraEntregaTest {
     void entregaPadraoDeveCalcularCustoCorreto() {
         CalculadoraEntrega calc = new CalculadoraEntrega(new EntregaPadrao());
 
-        // 5.00 + (3km * 1.50) = 9.50
         assertEquals(9.50, calc.calcularCusto(3.0), 0.001);
     }
 

@@ -52,7 +52,7 @@ class GarcomCommandTest {
         garcom.executarComando(new AdicionarItemCommand(pedido, "Item A"));
         garcom.executarComando(new AdicionarItemCommand(pedido, "Item B"));
 
-        garcom.desfazerUltimo(); // desfaz "Item B"
+        garcom.desfazerUltimo();
 
         assertTrue(pedido.getItens().contains("Item A"));
         assertFalse(pedido.getItens().contains("Item B"));

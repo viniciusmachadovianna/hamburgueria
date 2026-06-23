@@ -53,7 +53,6 @@ class AprovadorDescontoTest {
     void solicitanteNaoDeveConhecerAprovadorEspecifico() {
         AprovadorDesconto cadeia = CadeiaAprovacaoFactory.criarCadeiaPadrao();
 
-        // O cliente apenas chama processar() no primeiro elo, sem decidir quem aprova
         assertDoesNotThrow(() -> cadeia.processar(0.15));
     }
 }

@@ -56,7 +56,6 @@ class RelatorioVisitorTest {
             item.aceitar(nutricional);
         }
 
-        // Os itens em si nao mudam — os visitors acumulam em si proprios
         assertEquals(29.90, financeiro.getTotalAcumulado(), 0.001);
         assertEquals(1010,  nutricional.getCaloriasAcumuladas());
     }
@@ -64,12 +63,11 @@ class RelatorioVisitorTest {
     @Test
     @DisplayName("Novo visitor pode ser adicionado sem alterar as classes dos itens")
     void novoVisitorNaoAlteraClassesDosItens() {
-        // Simula um terceiro visitor anonimo que conta apenas lanches
         int[] contadorLanches = {0};
         RelatorioVisitor contadorVisitor = new RelatorioVisitor() {
             @Override public void visitar(LancheItem item)         { contadorLanches[0]++; }
-            @Override public void visitar(BebidaItem item)         { /* ignora */ }
-            @Override public void visitar(AcompanhamentoItem item) { /* ignora */ }
+            @Override public void visitar(BebidaItem item)         {  }
+            @Override public void visitar(AcompanhamentoItem item) {  }
         };
 
         for (ItemVisitavel item : itensDoPedido) {

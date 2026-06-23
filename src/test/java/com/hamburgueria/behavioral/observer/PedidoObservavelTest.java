@@ -45,7 +45,7 @@ class PedidoObservavelTest {
         pedido.mudarStatus("PRONTO");
 
         assertEquals("PRONTO", painel.getUltimoStatus());
-        assertEquals("", app.getUltimoStatus()); // nao foi notificado
+        assertEquals("", app.getUltimoStatus());
     }
 
     @Test
