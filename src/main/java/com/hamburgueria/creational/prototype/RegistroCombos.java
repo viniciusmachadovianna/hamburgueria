@@ -3,10 +3,6 @@ package com.hamburgueria.creational.prototype;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Registro (Prototype Registry) com os combos "modelo" do cardapio,
- * prontos para serem clonados a qualquer momento sem reconstrucao manual.
- */
 public class RegistroCombos {
 
     private final Map<String, CombinacaoPredefinida> combosModelo = new HashMap<>();

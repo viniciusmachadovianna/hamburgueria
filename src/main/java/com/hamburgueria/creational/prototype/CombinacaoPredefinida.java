@@ -3,11 +3,6 @@ package com.hamburgueria.creational.prototype;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Prototipo concreto: um combo pre-definido (lanche + acompanhamento +
- * bebida) que pode ser clonado para originar novos combos personalizados
- * sem afetar o combo "modelo" original.
- */
 public class CombinacaoPredefinida implements CombinacaoPrototype {
 
     private String nomeCombo;
@@ -27,10 +22,6 @@ public class CombinacaoPredefinida implements CombinacaoPrototype {
         this.observacoes = new ArrayList<>();
     }
 
-    /**
-     * Clone PROFUNDO: a lista de observacoes e copiada para uma nova lista,
-     * garantindo que alteracoes no clone nao afetem o prototipo original.
-     */
     @Override
     public CombinacaoPredefinida clonar() {
         CombinacaoPredefinida copia = new CombinacaoPredefinida(

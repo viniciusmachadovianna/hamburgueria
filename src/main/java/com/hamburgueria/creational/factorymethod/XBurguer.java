@@ -1,6 +1,5 @@
 package com.hamburgueria.creational.factorymethod;
 
-
 public class XBurguer extends Lanche {
     public XBurguer() {
         this.nome = "X-Burguer";
