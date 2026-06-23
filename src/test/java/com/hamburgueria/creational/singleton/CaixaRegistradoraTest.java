@@ -39,6 +39,7 @@ class CaixaRegistradoraTest {
     void estadoDeveSerCompartilhadoGlobalmente() {
         CaixaRegistradora.getInstance().registrarVenda(100.0);
 
+        // Simula outro ponto do sistema acessando a mesma instancia
         CaixaRegistradora outraReferencia = CaixaRegistradora.getInstance();
 
         assertEquals(100.0, outraReferencia.getSaldoEmCaixa(), 0.001);
