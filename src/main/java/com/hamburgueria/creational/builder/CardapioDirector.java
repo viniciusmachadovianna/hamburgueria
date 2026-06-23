@@ -1,10 +1,5 @@
 package com.hamburgueria.creational.builder;
 
-/**
- * Director (opcional no padrao Builder, mas presente na formulacao original
- * do GoF). Encapsula sequencias conhecidas de chamadas ao builder para
- * montar lanches "de cardapio" sem que o cliente precise conhecer a receita.
- */
 public class CardapioDirector {
 
     public LancheCustomizado montarDuploBacon(LancheBuilder builder) {

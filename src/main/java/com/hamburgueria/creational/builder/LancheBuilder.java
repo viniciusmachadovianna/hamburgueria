@@ -3,19 +3,6 @@ package com.hamburgueria.creational.builder;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Padrao BUILDER.
- *
- * Separa a construcao de um objeto complexo (LancheCustomizado, com varias
- * opcoes independentes: pao, proteina, adicionais, restricoes alimentares)
- * da sua representacao final, permitindo construir o mesmo tipo de objeto
- * passo a passo de formas diferentes atraves de uma interface fluente
- * (method chaining).
- *
- * No dominio: o totem de autoatendimento ou o atendente monta o lanche do
- * cliente adicionando um item por vez, sem precisar de um construtor gigante
- * com dezenas de parametros posicionais.
- */
 public class LancheBuilder {
 
     String pao = "Pao tradicional";

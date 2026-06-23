@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Produto complexo construido passo a passo pelo BUILDER.
- * Representa um lanche totalmente customizavel montado pelo cliente.
- */
 public class LancheCustomizado {
 
     private final String pao;
