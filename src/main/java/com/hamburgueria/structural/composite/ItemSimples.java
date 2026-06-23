@@ -1,9 +1,5 @@
 package com.hamburgueria.structural.composite;
 
-/**
- * Folha (Leaf) do Composite: um item individual do cardapio, que nao
- * contem outros itens dentro de si (ex.: um lanche avulso, uma bebida).
- */
 public class ItemSimples implements ItemCardapio {
 
     private final String nome;

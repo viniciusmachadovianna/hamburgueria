@@ -3,12 +3,6 @@ package com.hamburgueria.structural.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Composto (Composite) do padrao: um combo que agrupa varios ItemCardapio,
- * podendo conter tanto folhas (ItemSimples) quanto outros combos
- * (composicao recursiva). Aplica opcionalmente um desconto sobre a soma
- * dos itens.
- */
 public class Combo implements ItemCardapio {
 
     private final String nome;
