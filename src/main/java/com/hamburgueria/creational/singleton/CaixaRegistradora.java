@@ -39,4 +39,9 @@ public final class CaixaRegistradora {
         return totalVendasRegistradas;
     }
 
+    // Teste p/ casos isolados
+    public synchronized void resetar() {
+        this.saldoEmCaixa = 0.0;
+        this.totalVendasRegistradas = 0;
+    }
 }
