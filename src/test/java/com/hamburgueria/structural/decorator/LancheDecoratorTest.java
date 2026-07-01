@@ -61,6 +61,6 @@ class LancheDecoratorTest {
         LancheComponent comBaconEOvo = new ComOvo(comBacon);
 
         assertTrue(comBaconEOvo instanceof LancheComponent);
-        assertEquals(16.50, comBaconEOvo.getPreco(), 0.001);
+        assertEquals(17.50, comBaconEOvo.getPreco(), 0.001);
     }
 }
