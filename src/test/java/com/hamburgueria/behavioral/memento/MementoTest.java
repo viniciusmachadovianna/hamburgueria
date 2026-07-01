@@ -3,6 +3,9 @@ package com.hamburgueria.behavioral.memento;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.pedido.HistoricoPedido;
+import com.hamburgueria.pedido.PedidoEmEdicao;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class MementoTest {

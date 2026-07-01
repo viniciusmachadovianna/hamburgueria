@@ -4,6 +4,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.notificacao.AppNotificacao;
+import com.hamburgueria.notificacao.DisplaySenha;
+import com.hamburgueria.notificacao.PainelCozinha;
+import com.hamburgueria.pedido.PedidoObservavel;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PedidoObservavelTest {

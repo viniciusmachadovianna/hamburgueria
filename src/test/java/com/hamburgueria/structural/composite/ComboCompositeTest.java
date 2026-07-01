@@ -3,6 +3,10 @@ package com.hamburgueria.structural.composite;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.cardapio.Combo;
+import com.hamburgueria.cardapio.ItemCardapio;
+import com.hamburgueria.cardapio.ItemSimples;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ComboCompositeTest {

@@ -3,6 +3,16 @@ package com.hamburgueria.creational.abstractfactory;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.ingrediente.FabricaIngredientes;
+import com.hamburgueria.ingrediente.FabricaLinhaGourmet;
+import com.hamburgueria.ingrediente.FabricaLinhaTradicional;
+import com.hamburgueria.ingrediente.MolhoBarbecue;
+import com.hamburgueria.ingrediente.MolhoEspecial;
+import com.hamburgueria.ingrediente.MolhoTruffleMaionese;
+import com.hamburgueria.ingrediente.Pao;
+import com.hamburgueria.ingrediente.PaoAustraliano;
+import com.hamburgueria.ingrediente.PaoBrioche;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FabricaIngredientesTest {

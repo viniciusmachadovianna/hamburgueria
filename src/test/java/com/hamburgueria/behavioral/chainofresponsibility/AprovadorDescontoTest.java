@@ -3,6 +3,9 @@ package com.hamburgueria.behavioral.chainofresponsibility;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.desconto.AprovadorDesconto;
+import com.hamburgueria.desconto.CadeiaAprovacaoFactory;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AprovadorDescontoTest {

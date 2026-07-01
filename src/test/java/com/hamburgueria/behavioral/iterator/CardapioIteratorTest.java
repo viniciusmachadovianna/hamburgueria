@@ -4,6 +4,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.cardapio.Cardapio;
+import com.hamburgueria.cardapio.CardapioIterator;
+import com.hamburgueria.cardapio.ItemMenuSimples;
+
 import java.util.ArrayList;
 import java.util.List;
 

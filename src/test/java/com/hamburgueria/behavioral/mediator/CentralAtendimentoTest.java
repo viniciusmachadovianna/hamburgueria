@@ -5,6 +5,12 @@ import org.junit.jupiter.api.DisplayName;
 
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.atendimento.AtendimentoMediator;
+import com.hamburgueria.atendimento.Caixa;
+import com.hamburgueria.atendimento.CentralAtendimento;
+import com.hamburgueria.atendimento.Cozinha;
+import com.hamburgueria.atendimento.Entregador;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CentralAtendimentoTest {

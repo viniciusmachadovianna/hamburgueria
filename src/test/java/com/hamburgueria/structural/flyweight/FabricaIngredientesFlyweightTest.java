@@ -3,6 +3,10 @@ package com.hamburgueria.structural.flyweight;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.ingrediente.FabricaIngredientesFlyweight;
+import com.hamburgueria.ingrediente.ItemPedido;
+import com.hamburgueria.ingrediente.TipoIngrediente;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FabricaIngredientesFlyweightTest {

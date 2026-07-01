@@ -3,6 +3,9 @@ package com.hamburgueria.creational.prototype;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.combo.CombinacaoPredefinida;
+import com.hamburgueria.combo.RegistroCombos;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CombinacaoPredefinidaTest {

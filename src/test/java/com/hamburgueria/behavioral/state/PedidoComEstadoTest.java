@@ -3,6 +3,8 @@ package com.hamburgueria.behavioral.state;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.pedido.PedidoComEstado;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PedidoComEstadoTest {

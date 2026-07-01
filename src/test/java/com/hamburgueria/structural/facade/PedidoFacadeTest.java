@@ -3,6 +3,12 @@ package com.hamburgueria.structural.facade;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.estado.EstoqueSubsistema;
+import com.hamburgueria.infra.CozinhaSubsistema;
+import com.hamburgueria.infra.NotificacaoSubsistema;
+import com.hamburgueria.infra.PagamentoSubsistema;
+import com.hamburgueria.infra.PedidoFacade;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class PedidoFacadeTest {

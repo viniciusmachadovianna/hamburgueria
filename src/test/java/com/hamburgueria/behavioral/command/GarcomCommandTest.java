@@ -3,6 +3,11 @@ package com.hamburgueria.behavioral.command;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.atendimento.Garcom;
+import com.hamburgueria.pedido.Pedido;
+import com.hamburgueria.pedido.comando.AdicionarItemCommand;
+import com.hamburgueria.pedido.comando.RemoverItemCommand;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class GarcomCommandTest {

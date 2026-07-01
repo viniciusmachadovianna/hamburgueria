@@ -3,6 +3,14 @@ package com.hamburgueria.structural.bridge;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.preparo.HamburguerDeCarne;
+import com.hamburgueria.preparo.HamburguerDeFrango;
+import com.hamburgueria.preparo.ItemMenu;
+import com.hamburgueria.preparo.MetodoPreparo;
+import com.hamburgueria.preparo.PreparoNaBrasa;
+import com.hamburgueria.preparo.PreparoNaChapa;
+import com.hamburgueria.preparo.PreparoNaFritadeira;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ItemMenuBridgeTest {

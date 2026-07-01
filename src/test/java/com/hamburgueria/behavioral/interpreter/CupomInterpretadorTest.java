@@ -3,6 +3,9 @@ package com.hamburgueria.behavioral.interpreter;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.desconto.CupomInterpretadorContexto;
+import com.hamburgueria.desconto.ExpressaoCupom;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CupomInterpretadorTest {

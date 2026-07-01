@@ -3,6 +3,15 @@ package com.hamburgueria.creational.factorymethod;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.lanche.FabricaLanche;
+import com.hamburgueria.lanche.FabricaLancheVegetariano;
+import com.hamburgueria.lanche.FabricaXBurguer;
+import com.hamburgueria.lanche.FabricaXSalada;
+import com.hamburgueria.lanche.Lanche;
+import com.hamburgueria.lanche.XBurguer;
+import com.hamburgueria.lanche.XSalada;
+import com.hamburgueria.preparo.LancheVegetariano;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class FabricaLancheTest {

@@ -4,6 +4,14 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.relatorio.AcompanhamentoItem;
+import com.hamburgueria.relatorio.BebidaItem;
+import com.hamburgueria.relatorio.ItemVisitavel;
+import com.hamburgueria.relatorio.LancheItem;
+import com.hamburgueria.relatorio.RelatorioFinanceiroVisitor;
+import com.hamburgueria.relatorio.RelatorioNutricionalVisitor;
+import com.hamburgueria.relatorio.RelatorioVisitor;
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;

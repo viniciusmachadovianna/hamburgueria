@@ -3,6 +3,9 @@ package com.hamburgueria.structural.proxy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.estoque.ProxyEstoque;
+import com.hamburgueria.estoque.ServicoEstoque;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ProxyEstoqueTest {

@@ -3,6 +3,10 @@ package com.hamburgueria.structural.adapter;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.pagamento.AdaptadorGatewayExterno;
+import com.hamburgueria.pagamento.GatewayPagamentoExterno;
+import com.hamburgueria.pagamento.ProcessadorPagamento;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AdaptadorGatewayExternoTest {

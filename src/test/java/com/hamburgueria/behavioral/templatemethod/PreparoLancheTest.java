@@ -3,6 +3,10 @@ package com.hamburgueria.behavioral.templatemethod;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.lanche.PreparoLanche;
+import com.hamburgueria.lanche.preparo.PreparoLancheVegetariano;
+import com.hamburgueria.lanche.preparo.PreparoXBurguer;
+
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;

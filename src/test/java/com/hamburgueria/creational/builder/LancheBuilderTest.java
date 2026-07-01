@@ -3,6 +3,10 @@ package com.hamburgueria.creational.builder;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.lanche.CardapioDirector;
+import com.hamburgueria.lanche.LancheBuilder;
+import com.hamburgueria.lanche.LancheCustomizado;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LancheBuilderTest {

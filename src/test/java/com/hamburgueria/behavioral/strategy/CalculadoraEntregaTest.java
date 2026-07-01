@@ -3,6 +3,11 @@ package com.hamburgueria.behavioral.strategy;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import com.hamburgueria.entrega.CalculadoraEntrega;
+import com.hamburgueria.entrega.EntregaExpressa;
+import com.hamburgueria.entrega.EntregaPadrao;
+import com.hamburgueria.entrega.RetiradaBalcao;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CalculadoraEntregaTest {
