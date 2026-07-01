@@ -6,6 +6,12 @@ Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disc
 
 **Referências técnicas principais:** [Refactoring Guru](https://refactoring.guru/design-patterns/) e [Repositório do professor](https://github.com/marcoaparaujo/padroes-projeto)
 
+**Dependências e versões utilizadas:**
+- Java v21.0.11
+- JUnit Jupiter v5.10.2
+- Maven (Compilador) v21
+- Maven Surefire plugin v3.2.5
+
 ---
 
 ## Padrões e diagramas
@@ -135,6 +141,7 @@ Composição de classes e objetos que formam estruturas maiores, flexíveis e ma
 
 ![Diagrama UML Facade](diagrams/facade.png) \
 [Ref. visual Facade](https://refactoring.guru/design-patterns/facade)
+
 11. Flyweight
 > Função: suportar **grandes quantidades de objetos** usando compartilhamento de elementos em comum.
 
