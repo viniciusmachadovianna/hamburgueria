@@ -12,29 +12,29 @@ Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disc
 
 | # | Padrão (Categoria) | Classes principais no domínio |
 | :-: | :--- | :--- |
-| 1 | Singleton (Criacional) | CaixaRegistradora |
-| 2 | Factory Method (Criacional) | FabricaLanche |
-| 3 | Abstract Factory (Criacional) | FabricaIngredientes |
-| 4 | Builder (Criacional) | LancheBuilder + CardapioDirector |
-| 5 | Prototype (Criacional) | CombinacaoPredefinida + RegistroCombos |
-| 6 | Adapter (Estrutural) | AdaptadorGatewayExterno |
-| 7 | Bridge (Estrutural) | ItemMenu × MetodoPreparo |
-| 8 | Composite (Estrutural) | ItemCardapio |
-| 9 | Decorator (Estrutural) | LancheDecorator |
-| 10 | Facade (Estrutural) | PedidoFacade |
-| 11 | Flyweight (Estrutural) | TipoIngrediente + FabricaIngredientesFlyweight |
-| 12 | Proxy (Estrutural) | ProxyEstoque |
-| 13 | Chain of Responsibility (Comportamental) | AprovadorDesconto |
-| 14 | Command (Comportamental) | PedidoCommand + Garcom |
-| 15 | Interpreter (Comportamental) | ExpressaoCupom |
-| 16 | Iterator (Comportamental) | CardapioIterator |
-| 17 | Mediator (Comportamental) | AtendimentoMediator / CentralAtendimento |
-| 18 | Memento (Comportamental) | PedidoMemento + HistoricoPedido |
-| 19 | Observer (Comportamental) | PedidoObservavel + observadores |
-| 20 | State (Comportamental) | EstadoPedido |
-| 21 | Strategy (Comportamental) | EstrategiaEntrega |
-| 22 | Template Method (Comportamental) | PreparoLanche |
-| 23 | Visitor (Comportamental) | RelatorioVisitor |
+| 1 | Singleton (Criacional)                        | CaixaRegistradora |
+| 2 | Factory Method (Criacional)                   | FabricaLanche |
+| 3 | Abstract Factory (Criacional)                 | FabricaIngredientes |
+| 4 | Builder (Criacional)                          | LancheBuilder + CardapioDirector |
+| 5 | Prototype (Criacional)                        | CombinacaoPredefinida + RegistroCombos |
+| 6 | Adapter (Estrutural)                          | AdaptadorGatewayExterno |
+| 7 | Bridge (Estrutural)                           | ItemMenu × MetodoPreparo |
+| 8 | Composite (Estrutural)                        | ItemCardapio |
+| 9 | Decorator (Estrutural)                        | LancheDecorator |
+| 10 | Facade (Estrutural)                          | PedidoFacade |
+| 11 | Flyweight (Estrutural)                       | TipoIngrediente + FabricaIngredientesFlyweight |
+| 12 | Proxy (Estrutural)                           | ProxyEstoque |
+| 13 | Chain of Responsibility (Comportamental)     | AprovadorDesconto |
+| 14 | Command (Comportamental)                     | PedidoCommand + Garcom |
+| 15 | Interpreter (Comportamental)                 | ExpressaoCupom |
+| 16 | Iterator (Comportamental)                    | CardapioIterator |
+| 17 | Mediator (Comportamental)                    | AtendimentoMediator / CentralAtendimento |
+| 18 | Memento (Comportamental)                     | PedidoMemento + HistoricoPedido |
+| 19 | Observer (Comportamental)                    | PedidoObservavel + observadores |
+| 20 | State (Comportamental)                       | EstadoPedido |
+| 21 | Strategy (Comportamental)                    | EstrategiaEntrega |
+| 22 | Template Method (Comportamental)             | PreparoLanche |
+| 23 | Visitor (Comportamental)                     | RelatorioVisitor |
 
 ### Diagramas
 
