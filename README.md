@@ -72,8 +72,15 @@ Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disc
 | **`*`** ou **`0..*`** | Zero ou múltiplas instâncias | Lista aberta que pode ser vazia |
 | **`1..*`** | Uma ou múltiplas instâncias | Obrigatório ao menos uma |
 
-#### Diagrama geral
+#### Arquitetura
+![Arquitetura Hamburgueria](diagrams/arquitetura.png)
+
+---
+
+#### Diagrama de composição
 ![Diagrama UML Hamburgueria](diagrams/hamburgueria.png)
+
+---
 
 #### Diagrama de estados
 ![Diagrama de estados](diagrams/estados.png)
