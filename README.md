@@ -75,7 +75,7 @@ Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disc
 #### Diagrama geral
 ![Diagrama UML Hamburgueria](diagrams/hamburgueria.png)
 
-#### Diagram de estados
+#### Diagrama de estados
 ![Diagrama de estados](diagrams/estados.png)
 
 #### Diagramas por padrão
