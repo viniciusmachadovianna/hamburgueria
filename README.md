@@ -75,6 +75,8 @@ Sistema de Hamburgueria em Java como trabalho final de "Design Patterns" da disc
 #### Diagrama geral
 ![Diagrama UML Hamburgueria](diagrams/hamburgueria.png)
 
+![Diagrama de estados](diagrams/estados.png)
+
 #### Diagramas por padrão
 ##### Criacionais (Total: 5)
 Mecanismos de criação de objetos, tentando criar objetos de forma adequada à situação.
